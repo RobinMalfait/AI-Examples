@@ -2,7 +2,7 @@ const { fitness, prepend } = require('./fitnessFunctie')
 
 /* FUNCTIONS */
 function fitnessRatio (input, all = []) {
-  return ((fitness(input) / all.map(x => fitness(x)).reduce((total, curr) => total + curr)) * 100).toFixed(2)
+  return ((fitness(input) / all.map(x => fitness(x)).reduce((total, curr) => total + curr, 0)) * 100).toFixed(2)
 }
 
 /* OUTPUT */

@@ -1,7 +1,7 @@
 
-==============================
-Hoofdstuk 4 - Gradient Descent
-==============================
+==================================
+| Hoofdstuk 4 - Gradient Descent |
+==================================
 
 [ [ 1, 1, 3 ],
   [ 0.8, 0.6, 1.36 ],
@@ -14,9 +14,9 @@ Hoofdstuk 4 - Gradient Descent
   [ 0.1678, 0.0168, 0.0287 ],
   [ 0.1342, 0.0101, 0.0182 ] ]
 
-=============================
-Hoofdstuk 4 - Fitness Functie
-=============================
+=================================
+| Hoofdstuk 4 - Fitness Functie |
+=================================
 
 Fitness function of 0000 = 0
 Fitness function of 0001 = 14
@@ -34,9 +34,9 @@ Fitness function of 1100 = 36
 Fitness function of 1101 = 26
 Fitness function of 1110 = 14
 
-===========================
-Hoofdstuk 4 - Fitness Ratio
-===========================
+===============================
+| Hoofdstuk 4 - Fitness Ratio |
+===============================
 
 There is a 0.00% chance that item 0000 (0) is chosen.
 There is a 2.50% chance that item 0001 (14) is chosen.
@@ -54,9 +54,9 @@ There is a 6.43% chance that item 1100 (36) is chosen.
 There is a 4.64% chance that item 1101 (26) is chosen.
 There is a 2.50% chance that item 1110 (14) is chosen.
 
-=====================================
-Hoofdstuk 4 - Roulette Wiel Selection
-=====================================
+=========================================
+| Hoofdstuk 4 - Roulette Wiel Selection |
+=========================================
 
 [ 36, 44, 14, 14, 56, 54 ]
 
@@ -66,11 +66,35 @@ Totale waarde voor de fitness wordt gegeven door:
 Fitness ratio bepalen
 [ '16.5%', '20.2%', '6.4%', '6.4%', '25.7%', '24.8%' ]
 
-=====================================
-Hoofdstuk 4 - Recombinatie en Mutatie
-=====================================
+=========================================
+| Hoofdstuk 4 - Recombinatie en Mutatie |
+=========================================
 
 1. éénpunts crossover
 [1100, 0100] => [1100, 0100]
 [0001, 1110] => [0000, 1111]
-[0111, 1001] => [0101, 1011]
+[0111, 1001] => [0001, 1111]
+
+===================================================
+| Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
+===================================================
+
+0.3333333333333333
+
+==========================
+| Hoofdstuk 5 - Precisie |
+==========================
+
+0.2
+
+========================
+| Hoofdstuk 5 - Recall |
+========================
+
+0.2
+
+=========================
+| Hoofdstuk 5 - F-SCORE |
+=========================
+
+0.6857142857142857
