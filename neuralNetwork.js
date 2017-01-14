@@ -54,7 +54,7 @@ module.exports = {
       })
 
       return tableWithHeader(output, ['X1', 'X2', gString(perceptron), 'h(...)'])
-    }).join('\n\n')
+    }).join('\n')
 
     console.log(output)
   }
