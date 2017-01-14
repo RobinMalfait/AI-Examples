@@ -29,6 +29,12 @@ require('./fScore').output()
 output('Hoofdstuk 6 - Kostfunctie')
 require('./kost').output()
 
+output('Hoofdstuk 6 - Sigmoid function')
+require('./sigmoidFunction').output()
+
+output('Hoofdstuk 6 - Stapfunctie')
+require('./stapFunctie').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length + 4

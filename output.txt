@@ -72,8 +72,8 @@ Fitness ratio bepalen
 
 1. éénpunts crossover
 [1100, 0100] => [0100, 1100]
-[0001, 1110] => [1110, 0001]
-[0111, 1001] => [0101, 1011]
+[0001, 1110] => [0010, 1101]
+[0111, 1001] => [0001, 1111]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
@@ -129,3 +129,21 @@ Heuristiek = 0.785 + 0.425x
 
 Kost 0.2791
 
+
+==================================
+| Hoofdstuk 6 - Sigmoid function |
+==================================
+
+Input 0.123
+Sigmoid 0.5307112905000478
+
+=============================
+| Hoofdstuk 6 - Stapfunctie |
+=============================
+
+Input: 0.12 - Stap function: 1
+Input: -0.35 - Stap function: 0
+Input: 8.00 - Stap function: 1
+Input: 1.20 - Stap function: 1
+Input: -1.30 - Stap function: 0
+Input: 0.99 - Stap function: 1
