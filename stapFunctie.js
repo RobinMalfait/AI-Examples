@@ -1,6 +1,6 @@
 /* FUNCTIONS */
-function stap (z) {
-  return z >= 0 ? 1 : 0
+function stap (z, threshold = 0, yes = 1, no = 0) {
+  return z >= threshold ? yes : no
 }
 
 /* SETUP */
