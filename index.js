@@ -38,6 +38,9 @@ require('./stapFunctie').output()
 output('Hoofdstuk 6 - één-vs-allen')
 require('./eenVsAllen').output()
 
+output('Hoofdstuk 6 - Neural Network (XOR)')
+require('./neuralNetwork').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length + 4

@@ -15,6 +15,7 @@ const input = [
 
 /* OUTPUT */
 module.exports = {
+  stap: stap,
   output: function output () {
     input.forEach((z) => console.log(`Input: ${z.toFixed(2)} - Stap function: ${stap(z)}`))
   }

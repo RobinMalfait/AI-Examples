@@ -10,12 +10,26 @@ function addBias (input) {
   return [1, ...input]
 }
 
+function gString (input, thetas) {
+  const items = []
+  for (var i = 0; i < input.length; i++) {
+    items.push([
+      thetas[i],
+      input[i]
+    ].join(' x '))
+  }
+  return items.join(' + ')
+}
+
 /* SETUP */
 const input = [0.8, 2]
 const thetas = [3.83, -4.29, 0.27]
 
 /* OUTPUT */
 module.exports = {
+  g: g,
+  addBias: addBias,
+  gString: gString,
   output: function output () {
     const biasedInput = addBias(input)
     const gValue = g(biasedInput, thetas)
@@ -28,13 +42,3 @@ module.exports = {
 }
 
 /* UTILS */
-function gString (input, thetas) {
-  const items = []
-  for (var i = 0; i < input.length; i++) {
-    items.push([
-      thetas[i],
-      input[i]
-    ].join(' x '))
-  }
-  return items.join(' + ')
-}
