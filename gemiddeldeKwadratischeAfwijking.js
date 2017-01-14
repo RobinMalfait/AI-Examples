@@ -1,6 +1,6 @@
 /* FUNCTIONS */
 function gemiddeldeKwadratischeAfwijking (h = () => {}, dataset = []) {
-  // 1/M * sum(h(xi) - yi)^2
+  // 1/m * sum((h(xi) - yi)^2)
   const m = dataset.length
   return (1 / m) * dataset.map(([x, y]) => Math.pow(h(x) - y, 2)).reduce((total, curr) => total + curr, 0)
 }

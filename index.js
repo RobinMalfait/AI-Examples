@@ -26,6 +26,9 @@ require('./recall').output()
 output('Hoofdstuk 5 - F-SCORE')
 require('./fScore').output()
 
+output('Hoofdstuk 6 - Kostfunctie')
+require('./kost').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length + 4
