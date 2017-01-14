@@ -8,6 +8,9 @@ require('./fitnessFunctie').output()
 output('Hoofdstuk 4 - Fitness Ratio')
 require('./fitnessRatio').output()
 
+output('Hoofdstuk 4 - Roulette Wiel Selection')
+require('./rouletteWielSelection').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length

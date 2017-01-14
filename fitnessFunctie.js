@@ -1,8 +1,10 @@
 /* FUNCTIONS */
 function fitness (input) {
   // 15x - x^2
-
-  const number = parseInt(input, 2)
+  let number = input
+  if (typeof input === 'string') {
+      number = parseInt(input, 2)
+  }
   return 15 * number - square(number)
 }
 

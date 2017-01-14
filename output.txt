@@ -53,3 +53,15 @@ There is a 7.86% chance that item 1011 (44) is chosen.
 There is a 6.43% chance that item 1100 (36) is chosen.
 There is a 4.64% chance that item 1101 (26) is chosen.
 There is a 2.50% chance that item 1110 (14) is chosen.
+
+=====================================
+Hoofdstuk 4 - Roulette Wiel Selection
+=====================================
+
+[ 36, 44, 14, 14, 56, 54 ]
+
+Totale waarde voor de fitness wordt gegeven door:
+36 + 44 + 14 + 14 + 56 + 54 = 218
+
+Fitness ratio bepalen
+[ '16.5%', '20.2%', '6.4%', '6.4%', '25.7%', '24.8%' ]
