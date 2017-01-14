@@ -1,0 +1,55 @@
+
+==============================
+Hoofdstuk 4 - Gradient Descent
+==============================
+
+[ [ 1, 1, 3 ],
+  [ 0.8, 0.6, 1.36 ],
+  [ 0.64, 0.36, 0.6688 ],
+  [ 0.512, 0.216, 0.3555 ],
+  [ 0.4096, 0.1296, 0.2014 ],
+  [ 0.3277, 0.0778, 0.1195 ],
+  [ 0.2621, 0.0467, 0.0731 ],
+  [ 0.2097, 0.028, 0.0455 ],
+  [ 0.1678, 0.0168, 0.0287 ],
+  [ 0.1342, 0.0101, 0.0182 ] ]
+
+=============================
+Hoofdstuk 4 - Fitness Functie
+=============================
+
+Fitness function of 0000 = 0
+Fitness function of 0001 = 14
+Fitness function of 0010 = 26
+Fitness function of 0011 = 36
+Fitness function of 0100 = 44
+Fitness function of 0101 = 50
+Fitness function of 0110 = 54
+Fitness function of 0111 = 56
+Fitness function of 1000 = 56
+Fitness function of 1001 = 54
+Fitness function of 1010 = 50
+Fitness function of 1011 = 44
+Fitness function of 1100 = 36
+Fitness function of 1101 = 26
+Fitness function of 1110 = 14
+
+===========================
+Hoofdstuk 4 - Fitness Ratio
+===========================
+
+There is a 0.00% chance that item 0000 (0) is chosen.
+There is a 2.50% chance that item 0001 (14) is chosen.
+There is a 4.64% chance that item 0010 (26) is chosen.
+There is a 6.43% chance that item 0011 (36) is chosen.
+There is a 7.86% chance that item 0100 (44) is chosen.
+There is a 8.93% chance that item 0101 (50) is chosen.
+There is a 9.64% chance that item 0110 (54) is chosen.
+There is a 10.00% chance that item 0111 (56) is chosen.
+There is a 10.00% chance that item 1000 (56) is chosen.
+There is a 9.64% chance that item 1001 (54) is chosen.
+There is a 8.93% chance that item 1010 (50) is chosen.
+There is a 7.86% chance that item 1011 (44) is chosen.
+There is a 6.43% chance that item 1100 (36) is chosen.
+There is a 4.64% chance that item 1101 (26) is chosen.
+There is a 2.50% chance that item 1110 (14) is chosen.
