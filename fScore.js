@@ -38,7 +38,7 @@ module.exports = {
     const algorithms = [[0.5, 0.4], [0.7, 0.1], [0.02, 1.0]]
 
     const algorithmsTable = algorithms.map(([precisie, rappel], i) => {
-        return `Algorithm ${i + 1} | Precisie (${precisie.toFixed(3)}) | Rappel (${rappel.toFixed(3)}) | F-score: ${fScore(precisie, rappel).toFixed(3)}`
+      return `Algorithm ${i + 1} | Precisie (${precisie.toFixed(3)}) | Rappel (${rappel.toFixed(3)}) | F-score: ${fScore(precisie, rappel).toFixed(3)}`
     }).join('\n')
     console.log('')
     console.log(['Opmerking 5.14 Pagina 8', '-'.repeat(23), algorithmsTable].join('\n'))

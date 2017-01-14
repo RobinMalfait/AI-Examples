@@ -3,7 +3,7 @@ function fitness (input) {
   // 15x - x^2
   let number = input
   if (typeof input === 'string') {
-      number = parseInt(input, 2)
+    number = parseInt(input, 2)
   }
   return 15 * number - square(number)
 }

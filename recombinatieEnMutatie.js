@@ -29,7 +29,7 @@ module.exports = {
     console.log(population.map(([parent1, parent2]) => {
       const { child1, child2 } = eenpuntsCrossover(parent1, parent2)
       return `[${parent1}, ${parent2}] => [${child1}, ${child2}]`
-  }).join('\n'))
+    }).join('\n'))
   }
 }
 
