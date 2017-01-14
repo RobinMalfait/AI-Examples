@@ -18,8 +18,8 @@ function fScore (precisie, recall) {
  * | h(x) = 0 |     3 |    13 |
  */
 const datagrid = [
-  12, 8,
-  3, 13
+  80, 8,
+  0, 13
 ]
 /* OUTPUT */
 module.exports = {
@@ -31,6 +31,16 @@ module.exports = {
     const recallValue = recall(a, c)
     const precisieValue = precisie(a, b)
 
-    console.log(fScore(precisieValue, recallValue))
+    console.log(`Precisie = ${precisieValue}`)
+    console.log(`Recall   = ${recallValue}`)
+    console.log(`F-SCORE  = ${fScore(precisieValue, recallValue)}`)
+
+    const algorithms = [[0.5, 0.4], [0.7, 0.1], [0.02, 1.0]]
+
+    const algorithmsTable = algorithms.map(([precisie, rappel], i) => {
+        return `Algorithm ${i + 1} | Precisie (${precisie.toFixed(3)}) | Rappel (${rappel.toFixed(3)}) | F-score: ${fScore(precisie, rappel).toFixed(3)}`
+    }).join('\n')
+    console.log('')
+    console.log(['Opmerking 5.14 Pagina 8', '-'.repeat(23), algorithmsTable].join('\n'))
   }
 }

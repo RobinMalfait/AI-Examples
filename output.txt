@@ -73,7 +73,7 @@ Fitness ratio bepalen
 1. éénpunts crossover
 [1100, 0100] => [1100, 0100]
 [0001, 1110] => [0000, 1111]
-[0111, 1001] => [0001, 1111]
+[0111, 1001] => [0101, 1011]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
@@ -97,4 +97,12 @@ Fitness ratio bepalen
 | Hoofdstuk 5 - F-SCORE |
 =========================
 
-0.6857142857142857
+Precisie = 0.9090909090909091
+Recall   = 1
+F-SCORE  = 0.9523809523809523
+
+Opmerking 5.14 Pagina 8
+-----------------------
+Algorithm 1 | Precisie (0.500) | Rappel (0.400) | F-score: 0.444
+Algorithm 2 | Precisie (0.700) | Rappel (0.100) | F-score: 0.175
+Algorithm 3 | Precisie (0.020) | Rappel (1.000) | F-score: 0.039
