@@ -11,6 +11,9 @@ require('./fitnessRatio').output()
 output('Hoofdstuk 4 - Roulette Wiel Selection')
 require('./rouletteWielSelection').output()
 
+output('Hoofdstuk 4 - Recombinatie en Mutatie')
+require('./recombinatieEnMutatie').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length

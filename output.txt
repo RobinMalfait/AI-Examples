@@ -65,3 +65,12 @@ Totale waarde voor de fitness wordt gegeven door:
 
 Fitness ratio bepalen
 [ '16.5%', '20.2%', '6.4%', '6.4%', '25.7%', '24.8%' ]
+
+=====================================
+Hoofdstuk 4 - Recombinatie en Mutatie
+=====================================
+
+1. éénpunts crossover
+[1100, 0100] => [1100, 0100]
+[0001, 1110] => [0000, 1111]
+[0111, 1001] => [0101, 1011]
