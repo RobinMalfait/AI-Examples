@@ -5,6 +5,7 @@ function sigmoid (z) {
 
 /* OUTPUT */
 module.exports = {
+  sigmoid: sigmoid,
   output: function output () {
     const input = 0.123
 

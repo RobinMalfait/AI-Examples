@@ -35,6 +35,9 @@ require('./sigmoidFunction').output()
 output('Hoofdstuk 6 - Stapfunctie')
 require('./stapFunctie').output()
 
+output('Hoofdstuk 6 - één-vs-allen')
+require('./eenVsAllen').output()
+
 /* UTILS */
 function output (title) {
   const l = title.length + 4

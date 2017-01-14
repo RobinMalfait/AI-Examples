@@ -71,9 +71,9 @@ Fitness ratio bepalen
 =========================================
 
 1. éénpunts crossover
-[1100, 0100] => [0100, 1100]
+[1100, 0100] => [1100, 0100]
 [0001, 1110] => [0010, 1101]
-[0111, 1001] => [0001, 1111]
+[0111, 1001] => [1001, 0111]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
@@ -147,3 +147,11 @@ Input: 8.00 - Stap function: 1
 Input: 1.20 - Stap function: 1
 Input: -1.30 - Stap function: 0
 Input: 0.99 - Stap function: 1
+
+==============================
+| Hoofdstuk 6 - één-vs-allen |
+==============================
+
+h(0.8, 2) = g(3.83 x 1 + -4.29 x 0.8 + 0.27 x 2) = g(0.94)
+g(0.94) = 0.7187
+Er is 71.87% kans dat (0.8, 2) tot deze klasse behoort.
