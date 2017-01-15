@@ -1,3 +1,4 @@
+const { table } = require('../utils')
 const { fitness } = require('./fitnessFunctie')
 
 /* SETUP */
@@ -16,10 +17,10 @@ module.exports = {
       total += fi
     })
 
-    console.log(items)
+    console.log(table(items))
     console.log(`\nTotale waarde voor de fitness wordt gegeven door:\n${items.join(' + ')} = ${total}\n`)
 
     console.log('Fitness ratio bepalen')
-    console.log(items.map(item => `${(item / total * 100).toFixed(1)}%`))
+    console.log(table(items.map(item => `${(item / total * 100).toFixed(1)}%`)))
   }
 }

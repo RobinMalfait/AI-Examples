@@ -1,4 +1,4 @@
-const Table = require('cli-table')
+const { table, tableWithHeader } = require('../utils')
 const { stap } = require('./stapFunctie')
 const { g, addBias } = require('./eenVsAllen')
 
@@ -73,15 +73,4 @@ module.exports = {
     })
     console.log(tableWithHeader(totalOutput, ['X1', 'X2', 'OR', 'NAND', 'AND(OR, NAND)']))
   }
-}
-
-/* UTILS */
-function table (input, options = {}) {
-  const table = new Table(options)
-  table.push(...input)
-  return table.toString()
-}
-
-function tableWithHeader (input, head) {
-  return table(input, { head })
 }

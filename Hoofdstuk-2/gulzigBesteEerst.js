@@ -1,3 +1,5 @@
+const { table } = require('../utils')
+
 /* FUNCTIONS */
 const closed = []
 let open = []
@@ -99,8 +101,12 @@ module.exports = {
 
     uniformCostSearch(start, target)
 
-    console.log(`\nClosed list: ${closed.join(', ')}`)
-    console.log(`Path: ${path.join(' -> ')}`)
+    console.log(`\nClosed list:`)
+    console.log(table(closed))
+    console.log('\nPath:')
+    console.log(table(path, {
+      chars: { middle: '>' }
+    }))
   }
 }
 

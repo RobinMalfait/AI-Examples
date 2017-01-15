@@ -1,3 +1,4 @@
+const { tableWithHeader } = require('../utils')
 const { recall } = require('./recall')
 const { precisie } = require('./precisie')
 
@@ -38,9 +39,15 @@ module.exports = {
     const algorithms = [[0.5, 0.4], [0.7, 0.1], [0.02, 1.0]]
 
     const algorithmsTable = algorithms.map(([precisie, rappel], i) => {
-      return `Algorithm ${i + 1} | Precisie (${precisie.toFixed(3)}) | Rappel (${rappel.toFixed(3)}) | F-score: ${fScore(precisie, rappel).toFixed(3)}`
-    }).join('\n')
-    console.log('')
-    console.log(['Opmerking 5.14 Pagina 8', '-'.repeat(23), algorithmsTable].join('\n'))
+      return [
+        `Algorithm ${i + 1}`,
+        precisie.toFixed(3),
+        rappel.toFixed(3),
+        fScore(precisie, rappel).toFixed(3)
+      ]
+    })
+
+    console.log(['Opmerking 5.14 Pagina 8', '-'.repeat(23)].join('\n'))
+    console.log(tableWithHeader(algorithmsTable, ['Algorithm', 'Precisie', 'Rappel', 'F-score']))
   }
 }

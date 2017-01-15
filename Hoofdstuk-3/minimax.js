@@ -1,4 +1,4 @@
-const Table = require('cli-table')
+const { table } = require('../utils')
 
 /* FUNCTIONS */
 function decision (board) {
@@ -82,31 +82,5 @@ class Board {
 
   isTerminal () {
     return this.isLowestLevel
-  }
-}
-
-function table (input, options = {}) {
-  input = makeSureItIsTwoDimensional(input)
-  const table = new Table(options)
-  table.push(...input)
-  return table.toString()
-}
-
-function makeSureItIsTwoDimensional (input) {
-  if (Array.isArray(input) && Array.isArray(input[0])) {
-    return input
-  } else if (Array.isArray(input) && !Array.isArray(input[0])) {
-    return [input]
-  } else if (!Array.isArray(input)) {
-    return [[input]]
-  }
-}
-
-function nameAction (input) {
-  switch (input) {
-    case -1: return 'left'
-    case 0: return 'middle'
-    case 1: return 'right'
-    default: return 'unknown'
   }
 }

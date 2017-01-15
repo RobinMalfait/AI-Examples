@@ -1,3 +1,4 @@
+const { tableWithHeader } = require('../utils')
 const { fitness, prepend } = require('./fitnessFunctie')
 
 /* FUNCTIONS */
@@ -9,14 +10,23 @@ function fitnessRatio (input, all = []) {
 module.exports = {
   fitnessRatio: fitnessRatio,
   output: function output () {
-    var items = []
+    let items = []
     for (var i = 0; i < 15; i++) {
       const binary = prepend(i.toString(2), '0', 4)
       items.push(binary)
     }
 
-    items.forEach(item => {
-      console.log(`There is a ${fitnessRatio(item, items)}% chance that item ${item} (${fitness(item)}) is chosen.`)
+    items = items.map(item => {
+      return [
+        'There is a',
+        `${fitnessRatio(item, items)}%`,
+        'chance that item',
+        item,
+        `(${fitness(item)})`,
+        'is chosen'
+      ]
     })
+
+    console.log(tableWithHeader(items, ['', 'chance', '', 'binary', 'fitness', '']))
   }
 }

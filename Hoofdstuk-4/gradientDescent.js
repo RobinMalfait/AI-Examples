@@ -1,3 +1,5 @@
+const { table } = require('../utils')
+
 /* FUNCTIONS */
 function gradientDescent (h, g, x = [], alpha) {
   var position = x
@@ -35,7 +37,7 @@ const alpha = 0.1
 module.exports = {
   gradientDescent: gradientDescent,
   output: function output () {
-    console.log(gradientDescent(h, g, startPosition, alpha))
+    console.log(table(gradientDescent(h, g, startPosition, alpha)))
   }
 }
 

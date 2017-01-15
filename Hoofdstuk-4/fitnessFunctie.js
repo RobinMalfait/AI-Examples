@@ -1,3 +1,5 @@
+const { tableWithHeader } = require('../utils')
+
 /* FUNCTIONS */
 function fitness (input) {
   // 15x - x^2
@@ -13,10 +15,18 @@ module.exports = {
   fitness: fitness,
   prepend: prepend,
   output: function output () {
+    const output = []
     for (var i = 0; i < 15; i++) {
       const binary = prepend(i.toString(2), '0', 4)
-      console.log(`Fitness function of ${binary} = ${fitness(binary)}`)
+      output.push([
+        'Fitness function of',
+        binary,
+        '=',
+        fitness(binary)
+      ])
     }
+
+    console.log(tableWithHeader(output, ['', 'binary', '=', 'fitness']))
   }
 }
 
