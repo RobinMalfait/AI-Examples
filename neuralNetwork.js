@@ -21,8 +21,8 @@ const input = [
 
 const perceptrons = [
   [-1, 2, 2],
-  [-3, 2, 2],
-  [3, -2, -2]
+  [3, -2, -2],
+  [-3, 2, 2]
 ]
 
 /* OUTPUT */
@@ -55,8 +55,23 @@ module.exports = {
 
       return tableWithHeader(output, ['X1', 'X2', gString(perceptron), 'h(...)'])
     }).join('\n')
-
     console.log(output)
+
+    console.log('\n3. Perceptrons laten samenwerken')
+    const totalOutput = input.map(([x1, x2], i) => {
+      const biasedInput = addBias([x1, x2])
+
+      const perceptron1 = perceptrons[0]
+      const perceptron2 = perceptrons[1]
+      const perceptron3 = perceptrons[2]
+
+      const p1Value = stap(g(biasedInput, perceptron1))
+      const p2Value = stap(g(biasedInput, perceptron2))
+      const p3Value = stap(g(addBias([p1Value, p2Value]), perceptron3))
+
+      return [x1, x2, p1Value, p2Value, p3Value]
+    })
+    console.log(tableWithHeader(totalOutput, ['X1', 'X2', 'OR', 'NAND', 'AND(OR, NAND)']))
   }
 }
 
