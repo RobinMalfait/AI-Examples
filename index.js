@@ -11,6 +11,9 @@ require('./Hoofdstuk-2/gulzigBesteEerst').output()
 output('Hoofdstuk 3 - Minimax')
 require('./Hoofdstuk-3/minimax').output()
 
+output('Hoofdstuk 3 - alpha-beta-snoeien')
+require('./Hoofdstuk-3/alpha-beta-snoeien').output()
+
 output('Hoofdstuk 4 - Gradient Descent')
 require('./Hoofdstuk-4/gradientDescent').output()
 
