@@ -1,0 +1,23 @@
+{
+  "name": "AI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js > output.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinMalfait/AI-Examples.git"
+  },
+  "keywords": ["AI"],
+  "author": "Robin Malfait <malfait.robin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobinMalfait/AI-Examples/issues"
+  },
+  "homepage": "https://github.com/RobinMalfait/AI-Examples#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1"
+  }
+}
