@@ -64,6 +64,24 @@ Sibiu is al geexpandeerd
 Closed list: Arad, Sibiu, Fagaras, Bucharest
 Path: Arad -> Sibiu -> Fagaras -> Bucharest
 
+=========================
+| Hoofdstuk 3 - Minimax |
+=========================
+
+The board looks like this:
+┌────┬───┬───┐
+│ 12 │ 3 │ 8 │
+├────┼───┼───┤
+│ 1  │ 5 │ 7 │
+├────┼───┼───┤
+│ 14 │ 5 │ 1 │
+└────┴───┴───┘
+
+Your best value is: 
+┌───┐
+│ 3 │
+└───┘
+
 ==================================
 | Hoofdstuk 4 - Gradient Descent |
 ==================================
@@ -137,8 +155,8 @@ Fitness ratio bepalen
 
 1. éénpunts crossover
 [1100, 0100] => [1100, 0100]
-[0001, 1110] => [0010, 1101]
-[0111, 1001] => [0101, 1011]
+[0001, 1110] => [1110, 0001]
+[0111, 1001] => [0111, 1001]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
