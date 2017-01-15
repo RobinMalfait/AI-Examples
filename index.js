@@ -1,45 +1,45 @@
 /* OUTPUT */
 output('Hoofdstuk 4 - Gradient Descent')
-require('./gradientDescent').output()
+require('./Hoofdstuk-4/gradientDescent').output()
 
 output('Hoofdstuk 4 - Fitness Functie')
-require('./fitnessFunctie').output()
+require('./Hoofdstuk-4/fitnessFunctie').output()
 
 output('Hoofdstuk 4 - Fitness Ratio')
-require('./fitnessRatio').output()
+require('./Hoofdstuk-4/fitnessRatio').output()
 
 output('Hoofdstuk 4 - Roulette Wiel Selection')
-require('./rouletteWielSelection').output()
+require('./Hoofdstuk-4/rouletteWielSelection').output()
 
 output('Hoofdstuk 4 - Recombinatie en Mutatie')
-require('./recombinatieEnMutatie').output()
+require('./Hoofdstuk-4/recombinatieEnMutatie').output()
 
 output('Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking')
-require('./gemiddeldeKwadratischeAfwijking').output()
+require('./Hoofdstuk-5/gemiddeldeKwadratischeAfwijking').output()
 
 output('Hoofdstuk 5 - Precisie')
-require('./precisie').output()
+require('./Hoofdstuk-5/precisie').output()
 
 output('Hoofdstuk 5 - Recall')
-require('./recall').output()
+require('./Hoofdstuk-5/recall').output()
 
 output('Hoofdstuk 5 - F-SCORE')
-require('./fScore').output()
+require('./Hoofdstuk-5/fScore').output()
 
 output('Hoofdstuk 6 - Kostfunctie')
-require('./kost').output()
+require('./Hoofdstuk-6/kost').output()
 
 output('Hoofdstuk 6 - Sigmoid function')
-require('./sigmoidFunction').output()
+require('./Hoofdstuk-6/sigmoidFunction').output()
 
 output('Hoofdstuk 6 - Stapfunctie')
-require('./stapFunctie').output()
+require('./Hoofdstuk-6/stapFunctie').output()
 
 output('Hoofdstuk 6 - één-vs-allen')
-require('./eenVsAllen').output()
+require('./Hoofdstuk-6/eenVsAllen').output()
 
 output('Hoofdstuk 6 - Neural Network (XOR)')
-require('./neuralNetwork').output()
+require('./Hoofdstuk-6/neuralNetwork').output()
 
 /* UTILS */
 function output (title) {
