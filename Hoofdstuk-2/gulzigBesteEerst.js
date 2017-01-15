@@ -4,13 +4,12 @@ let open = []
 let path = []
 
 /**
- * Maakt zijn keuze: f = g + h (Hoeveel we hebben afgelegd + Hoever we nog denken dat het is)
- * Compleet
+ * Maakt zijn keuze: f = h (Hoever we nog denken dat het is)
+ * Kan compleet zijn, maar niet gegarandeerd
  */
-function aStar (start, target) {
+function uniformCostSearch (start, target) {
   let city = findCityByName(start)
-  let h = city.heuristicDistance
-  let g = city.g || 0
+  let h = city.heuristicDistance || 0
 
   /**
    * Markeer de huidige stad als geexpandeerd
@@ -39,12 +38,12 @@ function aStar (start, target) {
     return
   }
 
-  console.log(`${start}(${g} + ${h}) = ${g + h}`)
+  console.log(`${start}(${h}) = ${h}`)
 
   /**
    * Overloop alle buren
    */
-  city.connections.forEach(({ name, distance = 0 }) => {
+  city.connections.forEach(({ name }) => {
     /**
      * Is de buur al geexpandeerd, negeer hem dan!
      */
@@ -62,8 +61,7 @@ function aStar (start, target) {
      * Zet de lengte tot de vorige stad er bij
      */
     Object.assign(neighbor, {
-      parent: city,
-      g: (city.g || 0) + distance
+      parent: city
     })
 
     /**
@@ -75,16 +73,15 @@ function aStar (start, target) {
   /**
    * Zoek de volgende stad om te expanderen
    */
-  let nextCity = { totalDistance: Infinity }
+  let nextCity = { heuristicDistance: Infinity }
   open.forEach(city => {
-    const total = city.g + city.heuristicDistance
-    if (total < nextCity.totalDistance) {
-      nextCity = Object.assign({}, city, {totalDistance: total})
+    if (city.heuristicDistance < nextCity.heuristicDistance) {
+      nextCity = city
     }
   })
 
   if (nextCity.totalDistance !== Infinity) {
-    aStar(nextCity.name, target)
+    uniformCostSearch(nextCity.name, target)
   }
 }
 
@@ -100,7 +97,7 @@ module.exports = {
     const title = `From: ${start} - To: ${target}`
     console.log([title, '-'.repeat(title.length)].join('\n'))
 
-    aStar(start, target)
+    uniformCostSearch(start, target)
 
     console.log(`\nClosed list: ${closed.join(', ')}`)
     console.log(`Path: ${path.join(' -> ')}`)

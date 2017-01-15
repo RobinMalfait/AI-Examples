@@ -18,6 +18,52 @@ Rimnicu Vilcea is al geexpandeerd
 Closed list: Arad, Sibiu, Rimnicu Vilcea, Fagaras, Pitesti, Bucharest
 Path: Arad -> Sibiu -> Rimnicu Vilcea -> Pitesti -> Bucharest
 
+=====================================
+| Hoofdstuk 2 - Uniform Cost Search |
+=====================================
+
+From: Arad - To: Bucharest
+--------------------------
+Arad(0) = 0
+Zerind(0) = 0
+Arad is al geexpandeerd
+Sibiu(0) = 0
+Arad is al geexpandeerd
+Timisoara(0) = 0
+Arad is al geexpandeerd
+Oradea(0) = 0
+Zerind is al geexpandeerd
+Sibiu is al geexpandeerd
+Rimnicu Vilcea(0) = 0
+Sibiu is al geexpandeerd
+Fagaras(0) = 0
+Sibiu is al geexpandeerd
+Lugoj(0) = 0
+Timisoara is al geexpandeerd
+Pitesti(0) = 0
+Rimnicu Vilcea is al geexpandeerd
+Craiova(0) = 0
+Rimnicu Vilcea is al geexpandeerd
+Pitesti is al geexpandeerd
+
+Closed list: Arad, Zerind, Sibiu, Timisoara, Oradea, Rimnicu Vilcea, Fagaras, Lugoj, Pitesti, Craiova, Bucharest
+Path: Arad -> Sibiu -> Rimnicu Vilcea -> Pitesti -> Bucharest
+
+====================================
+| Hoofdstuk 2 - Gulzig Beste Eerst |
+====================================
+
+From: Arad - To: Bucharest
+--------------------------
+Arad(366) = 366
+Sibiu(253) = 253
+Arad is al geexpandeerd
+Fagaras(176) = 176
+Sibiu is al geexpandeerd
+
+Closed list: Arad, Sibiu, Fagaras, Bucharest
+Path: Arad -> Sibiu -> Fagaras -> Bucharest
+
 ==================================
 | Hoofdstuk 4 - Gradient Descent |
 ==================================
@@ -90,9 +136,9 @@ Fitness ratio bepalen
 =========================================
 
 1. éénpunts crossover
-[1100, 0100] => [0100, 1100]
-[0001, 1110] => [1110, 0001]
-[0111, 1001] => [0111, 1001]
+[1100, 0100] => [1100, 0100]
+[0001, 1110] => [0010, 1101]
+[0111, 1001] => [0101, 1011]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |

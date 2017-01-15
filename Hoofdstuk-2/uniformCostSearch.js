@@ -4,12 +4,11 @@ let open = []
 let path = []
 
 /**
- * Maakt zijn keuze: f = g + h (Hoeveel we hebben afgelegd + Hoever we nog denken dat het is)
- * Compleet
+ * Maakt zijn keuze: f = g (Hoeveel we hebben afgelegd)
+ * Niet compleet!
  */
-function aStar (start, target) {
+function uniformCostSearch (start, target) {
   let city = findCityByName(start)
-  let h = city.heuristicDistance
   let g = city.g || 0
 
   /**
@@ -39,12 +38,12 @@ function aStar (start, target) {
     return
   }
 
-  console.log(`${start}(${g} + ${h}) = ${g + h}`)
+  console.log(`${start}(${g}) = ${g}`)
 
   /**
    * Overloop alle buren
    */
-  city.connections.forEach(({ name, distance = 0 }) => {
+  city.connections.forEach(({ name }) => {
     /**
      * Is de buur al geexpandeerd, negeer hem dan!
      */
@@ -63,7 +62,7 @@ function aStar (start, target) {
      */
     Object.assign(neighbor, {
       parent: city,
-      g: (city.g || 0) + distance
+      g: (city.g || 0)
     })
 
     /**
@@ -75,16 +74,15 @@ function aStar (start, target) {
   /**
    * Zoek de volgende stad om te expanderen
    */
-  let nextCity = { totalDistance: Infinity }
+  let nextCity = { g: Infinity }
   open.forEach(city => {
-    const total = city.g + city.heuristicDistance
-    if (total < nextCity.totalDistance) {
-      nextCity = Object.assign({}, city, {totalDistance: total})
+    if (city.g < nextCity.g) {
+      nextCity = city
     }
   })
 
   if (nextCity.totalDistance !== Infinity) {
-    aStar(nextCity.name, target)
+    uniformCostSearch(nextCity.name, target)
   }
 }
 
@@ -100,7 +98,7 @@ module.exports = {
     const title = `From: ${start} - To: ${target}`
     console.log([title, '-'.repeat(title.length)].join('\n'))
 
-    aStar(start, target)
+    uniformCostSearch(start, target)
 
     console.log(`\nClosed list: ${closed.join(', ')}`)
     console.log(`Path: ${path.join(' -> ')}`)
