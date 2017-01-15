@@ -53,6 +53,9 @@ require('./Hoofdstuk-6/stapFunctie').output()
 output('Hoofdstuk 6 - één-vs-allen')
 require('./Hoofdstuk-6/eenVsAllen').output()
 
+output('Hoofdstuk 6 - Voorwaartse Propagatie')
+require('./Hoofdstuk-6/voorwaartsePropagatie').output()
+
 output('Hoofdstuk 6 - Neural Network (XOR)')
 require('./Hoofdstuk-6/neuralNetwork').output()
 
