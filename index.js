@@ -1,4 +1,7 @@
 /* OUTPUT */
+output('Hoofdstuk 2 - A*')
+require('./Hoofdstuk-2/aStar').output()
+
 output('Hoofdstuk 4 - Gradient Descent')
 require('./Hoofdstuk-4/gradientDescent').output()
 

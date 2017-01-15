@@ -1,4 +1,23 @@
 
+====================
+| Hoofdstuk 2 - A* |
+====================
+
+From: Arad - To: Bucharest
+--------------------------
+Arad(0 + 366) = 366
+Sibiu(140 + 253) = 393
+Arad is al geexpandeerd
+Rimnicu Vilcea(220 + 193) = 413
+Sibiu is al geexpandeerd
+Fagaras(239 + 176) = 415
+Sibiu is al geexpandeerd
+Pitesti(317 + 100) = 417
+Rimnicu Vilcea is al geexpandeerd
+
+Closed list: Arad, Sibiu, Rimnicu Vilcea, Fagaras, Pitesti, Bucharest
+Path: Arad -> Sibiu -> Rimnicu Vilcea -> Pitesti -> Bucharest
+
 ==================================
 | Hoofdstuk 4 - Gradient Descent |
 ==================================
@@ -71,9 +90,9 @@ Fitness ratio bepalen
 =========================================
 
 1. éénpunts crossover
-[1100, 0100] => [1100, 0100]
+[1100, 0100] => [0100, 1100]
 [0001, 1110] => [1110, 0001]
-[0111, 1001] => [1001, 0111]
+[0111, 1001] => [0111, 1001]
 
 ===================================================
 | Hoofdstuk 5 - Gemiddelde Kwadratische Afwijking |
