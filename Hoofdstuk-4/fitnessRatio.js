@@ -11,7 +11,7 @@ module.exports = {
   fitnessRatio: fitnessRatio,
   output: function output () {
     let items = []
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i <= 15; i++) {
       const binary = prepend(i.toString(2), '0', 4)
       items.push(binary)
     }
